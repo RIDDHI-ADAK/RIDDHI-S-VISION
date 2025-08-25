@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIDDHI-VISION — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Import Josefin Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    .neon-heading {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 4px;
+      color: #ffd700;
+      -webkit-text-stroke: 3px black;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+        0 0 8px #ffd700,
+        0 0 16px #ffd700,
+        0 0 20px #ff4500,
+        0 0 30px #ff6347,
+        0 0 50px #ff0000;
+      padding: 60px 150px;
+      border: 3px solid #00fff7;
+      border-radius: 50px;
+      display: inline-block;
+      box-shadow:
+        0 0 8px #00fff7,
+        0 0 18px #00fff7,
+        0 0 36px #00e6e0;
+      background: transparent;
+      line-height: 1.4;
+    }
+    .neon-container {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body id="index">
+
+  <canvas id="starfield"></canvas>
+
+  <!-- Navbar -->
+  <header class="nav-wrap">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-square">
+          <img src="avatar.jpg" alt="My Avatar">
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <input id="site-search" class="search-input" type="search" placeholder="Search this site..." aria-label="Search this site">
+        <button id="search-btn" class="icon-btn" aria-label="Open search">🔎</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container neon-container">
+    <h1 class="neon-heading">WELCOME TO<br>RIDDHI'S VISION</h1>
+  </div>
+
+  <main class="container hero" id="home">
+    <div class="hero-left" data-aos="fade-right">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1 class="big-title"><span class="gradient-text">Riddhiman Adak</span></h1>
+      <p class="sub">B.Tech CSE (AI & ML) — Haldia Institute of Technology</p>
+      <p class="lead">I design & build intelligent systems using deep learning, computer vision, and NLP. Passionate about research, hackathons and turning ideas into products.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="work.html">See My Work</a>
+      </div>
+      <div class="social-row mt">
+        <a href="https://github.com/RIDDHI-ADAK" target="_blank" class="social">GitHub</a>
+        <a href="https://www.linkedin.com/in/riddhiman-adak-5b6336307" target="_blank" class="social">LinkedIn</a>
+        <a href="mailto:riddhimanadak50@gmail.com" id="email-link" class="social">Email</a>
+      </div>
+    </div>
+    <aside class="hero-right card" data-aos="fade-left">
+
+
+      <div class="avatar" style="margin-bottom:14px;">
+  <img src="riddhi.jpg" alt="Riddhiman Adak" style="width:100%;height:100%;object-fit:cover;border-radius:14px;">
+</div>
+<div class="meta">
+  <div class="meta-name">Riddhiman Adak</div>
+  <div class="meta-sub">2nd Year • AI & ML Enthusiast</div>
+</div>
+
+
+      <div class="pills mt">
+        <span class="pill">Computer Vision</span>
+        <span class="pill">NLP</span>
+        <span class="pill">MLOps</span>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="container footer">
+    &lt; RIDDHI-VISION &gt;
+  </footer>
+
+  <div id="search-results" class="search-results" hidden>
+    <div class="search-header">
+      <strong>Search results</strong>
+      <button id="close-search" class="icon-btn">✖</button>
+    </div>
+    <div id="results-list" class="results-list"></div>
+    <div id="search-note" class="muted small"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({duration:700, offset:120}); </script>
+</body>
+</html>

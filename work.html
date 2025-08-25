@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIDDHI-VISION — Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <canvas id="starfield"></canvas>
+
+  <header class="nav-wrap">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-square">
+          <img src="avatar.jpg" alt="Logo">
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" class="active">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <input id="site-search" class="search-input" type="search" placeholder="Search this site..." aria-label="Search this site">
+        <button id="search-btn" class="icon-btn" aria-label="Open search">🔎</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="container section" data-aos="fade-up">
+    <div class="card">
+
+      <h2 class="section-title">Projects</h2>
+      
+  <!-- Small curved box with image -->
+  <div class="project-img-box">
+    <img src="work.jpg" alt="Project preview" />
+  </div>
+
+
+      <div class="projects-grid">
+        <article class="project card">
+          <h3>Fire Detection Model</h3>
+          <p>Deep learning based fire detection system using CNNs and image processing techniques, designed for real-time hazard monitoring.</p>
+          <div class="proj-links">
+            <a href="https://github.com/RIDDHI-ADAK/FireDetectionModel" target="_blank" class="btn ghost neon-black">View Repo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container footer">
+    &lt; RIDDHI-VISION &gt;
+  </footer>
+
+  <!-- Search results -->
+  <div id="search-results" class="search-results" hidden>
+    <div class="search-header">
+      <strong>Search results</strong>
+      <button id="close-search" class="icon-btn">✖</button>
+    </div>
+    <div id="results-list" class="results-list"></div>
+    <div id="search-note" class="muted small"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({duration:700, offset:120}); </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIDDHI-VISION — Education</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+
+  <!-- Navbar -->
+  <header class="nav-wrap">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo-square">
+          <img src="avatar.jpg" alt="Logo">
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Projects</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <input id="site-search" class="search-input" type="search" placeholder="Search this site..." aria-label="Search this site">
+        <button id="search-btn" class="icon-btn" aria-label="Open search">🔎</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <div class="card" data-aos="fade-up">
+      <h2 class="section-title">My Educational Journey</h2>
+
+       <!-- Small curved box with image -->
+  <div class="edu-img-box">
+    <img src="education.jpg" alt="Education photo" />
+  </div>
+      
+      <p>
+        I am <strong>Riddhiman Adak</strong>, a village student from Mahishadal, Haldia. My educational journey began at 
+        <strong>Vivekananda Mission Ashram Sikshayatan</strong>, Chaitanyapur, Haldia, where I completed my primary education. 
+        I then pursued my secondary education at <strong>Mahishadal Raj High School</strong>, Mahishadal.
+      </p>
+      
+      <p>
+        Currently, I am a <strong>second-year B.Tech student</strong> in <strong>Computer Science and Engineering</strong> with a specialization in 
+        <strong>Artificial Intelligence and Machine Learning</strong> at <strong>Haldia Institute of Technology</strong>.
+      </p>
+
+      <p>
+        My passion for technology is driven by curiosity, a love for learning, and inspiration drawn from the beauty of nature and the environment 
+        around me. I believe in blending innovation with purpose, and I strive to align my academic journey with my dreams.
+      </p>
+
+      <p>
+        My enthusiasm for AI and Machine Learning keeps me motivated to learn, experiment, and grow — not just as a student, but as a problem solver and creative thinker.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container footer">
+    &lt; RIDDHI-VISION &gt;
+  </footer>
+
+  <!-- Search results modal -->
+  <div id="search-results" class="search-results" hidden>
+    <div class="search-header">
+      <strong>Search results</strong>
+      <button id="close-search" class="icon-btn">✖</button>
+    </div>
+    <div id="results-list" class="results-list"></div>
+    <div id="search-note" class="muted small"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({duration:700, offset:120}); </script>
+</body>
+</html>
