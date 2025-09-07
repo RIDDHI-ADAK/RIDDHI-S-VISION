@@ -594,12 +594,17 @@ max-height: 320px; /* was 400px */
   background: none;
   border: none;
   color: white;
-  font-size: 26px;
+  font-size: 34px;   /* was 26px → bigger */
+  font-weight: bold; /* make it thicker */
+  text-shadow: 0 0 6px #00fff7, 0 0 12px #ff00ff; /* neon glow */
   cursor: pointer;
 }
 
 @media (max-width:980px){
-  .nav-toggle { display: block; }
+  .nav-toggle { 
+    display: block;
+    font-size: 38px;   /* extra large on phones */
+  }
 
   .nav-links {
     display: none;
@@ -608,8 +613,8 @@ max-height: 320px; /* was 400px */
     background: #0b1930;
     position: absolute;
     top: 60px;
-    right: 0;       /* dropdown from right side */
-    width: 220px;   /* panel width */
+    right: 0;
+    width: 220px;
     padding: 14px;
     z-index: 200;
     border-radius: 0 0 0 10px;
