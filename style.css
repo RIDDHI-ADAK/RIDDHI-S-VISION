@@ -606,15 +606,29 @@ max-height: 320px; /* was 400px */
     font-size: 52px;   /* EXTRA BIG on phones */
   }
 
+  /* keep search beside ☰ */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;          /* space between search and ☰ */
+    margin-left: auto;  /* push to right */
+  }
+
+  .search-input {
+    min-width: 160px;   /* ⬅️ wider on phones */
+    font-size: 16px;    /* ⬅️ bigger text */
+    padding: 8px 12px;  /* ⬅️ larger box */
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 14px;              /* more gap between links */
+    gap: 14px;
     background: #0b1930;
     position: absolute;
     top: 60px;
     right: 0;
-    width: 220px;           /* dropdown width */
+    width: 220px;   
     padding: 16px;
     z-index: 200;
     border-radius: 0 0 0 10px;
@@ -628,4 +642,3 @@ max-height: 320px; /* was 400px */
 
   .nav-links.show { display: flex; }
 }
-
