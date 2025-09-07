@@ -609,16 +609,23 @@ max-height: 320px; /* was 400px */
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;              /* more gap between links */
     background: #0b1930;
     position: absolute;
     top: 60px;
-    right: 0;       /* dropdown from right side */
-    width: 220px;   /* panel width */
-    padding: 14px;
+    right: 0;
+    width: 220px;           /* dropdown width */
+    padding: 16px;
     z-index: 200;
     border-radius: 0 0 0 10px;
   }
 
+  .nav-links a {
+    font-size: 20px;        /* bigger links on mobile */
+    padding: 12px 14px;     /* more clickable area */
+    text-align: right;      /* align neatly to right side */
+  }
+
   .nav-links.show { display: flex; }
 }
+
