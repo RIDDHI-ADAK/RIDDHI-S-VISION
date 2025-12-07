@@ -136,20 +136,28 @@
   <section class="container section" data-aos="fade-up">
     <h2 class="section-title">Contact Me</h2>
     <div class="contact-wrapper">
+
+
       <!-- Left Side: Gmail Form -->
-      <form action="https://formsubmit.co/riddhimanadak50@gmail.com" method="POST" class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_subject" value="New Message from RIDDHI-VISION">
+  <!-- Your Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="1635ab72-4659-4aa1-b45d-c61e693a7f45">
+
+  <!-- Optional Subject -->
+  <input type="hidden" name="subject" value="New Message from RIDDHI-VISION">
+
+  <!-- Your Fields -->
+  <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+  <input type="email" id="email" name="email" placeholder="Enter Your Gmail" required>
+  <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
+
+  <button type="submit">Send</button>
+
+</form>
 
 
 
-        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Enter Your Gmail" required>
-        <textarea id="message" name="message" placeholder="Type your message here..." rows="6" required></textarea>
-        <button type="submit">Send</button>
-      </form>
 
       <!-- Right Side: Instagram Card -->
       <div class="instagram-card">
